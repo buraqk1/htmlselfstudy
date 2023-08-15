@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            position: relative;
+            display: inline-block;
+            right: 0;
+        }
+        .b{
+            position: absolute;
+            display: none;
+            background-color: green;
+            color: black;
+            width: 135px;
+            text-align: center;
+        }
+        .b a{
+            display: block;
+            text-decoration: none;
+            padding: 10px;
+            color: black;
+        }
+        .btn{
+            background-color: green;
+            color: white;
+            padding: 20px;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+        }  
+        .a:hover .b{
+            display: block;
+        }
+        .b a:hover{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Deneme</h1>
+
+    <div class="a" style="float: right;">
+        <button class="btn">Bana Tıkla</button>
+        <div class="b">
+            <a href="#sekme1">Sekme1</a>
+            <a href="#sekme2">Sekme2</a>
+            <a href="#sekme3">Sekme3</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Position 2</title>
+    <style>
+        div.a{
+            position: relative;
+            border: 2px solid red;
+            bottom: 0px;
+            right: 0px;
+            width: 500px;
+            height: 200px;   
+        }
+        div.b{
+            position: absolute;
+            border: 2px solid blue;
+            width: 200px;
+            height: 100px;
+            top: 80px;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="a"> Relative
+        <div class="b">
+            Absolute
+        </div>
+    </div>
+</body>
+</html>

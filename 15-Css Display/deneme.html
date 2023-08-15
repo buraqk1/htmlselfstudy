@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Deneme</title>
+    <style>
+        img{
+            width: 200px;
+            height: 200px;
+        }
+        .a{
+            float: left;
+            border: 1px solid red;
+            margin: 4px;
+            padding: 6px;
+            width: 150px;
+        }
+        button{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="a", id="a1">Resim 1 <br>
+        <img src="samet 1.jpg" style="width: 100%;">
+        <button onclick="removeelenment()">Kaldır</button>
+    </div>
+    <div class="a", id="a2">Resim 2 <br>
+        <img src="samet 2.jpg" style="width: 100%;">
+        <button onclick="changeVisibility()">Gizle</button>
+    </div>
+    <div class="a", id="a3">Resim 3 <br>
+        <img src="samet 3.jpg" style="width: 100%;">
+        <button onclick="resetelement()">resetle</button>
+    </div>
+
+    <script>
+    function removeelenment(){
+        document.getElementById("a1").style.display="none";
+    }
+    function changeVisibility(){
+        document.getElementById("a2").style.visibility="hidden";
+    }
+    function resetelement(){
+        document.getElementById("a1").style.display="inline";
+        document.getElementById("a2").style.visibility="visible";
+    }
+    </script>
+</body>
+</html>

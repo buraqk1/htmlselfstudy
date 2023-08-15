@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Örnek</title>
+    <style>
+        .a{
+            height: 200px;
+            width: 33.333%;
+            float: left;
+            border: 1px solid red;
+            background-color: aquamarine;
+            text-align: center;
+            padding: 90px;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .A{
+            margin-bottom: 10px;
+        }
+        .A::after{
+            content: '';
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+    <h2>Float Örnek</h2>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <div class="A">
+        <div class="a">Birinci Kutu</div>
+        <div class="a">İkinci Kutu</div>
+        <div class="a">Üçüncü Kutu</div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam blanditiis magni eum quaerat deleniti delectus voluptatibus maiores, ipsa eos hic omnis, cum perspiciatis aliquid nemo ratione quis necessitatibus neque error tempora earum? Pariatur veniam, ducimus voluptas voluptatem magnam necessitatibus odit dicta a perferendis at asperiores quisquam nam aperiam itaque provident expedita ipsum maxime tempore in vel facere repellendus? Deserunt ipsum repellat, aperiam natus nam deleniti quae suscipit maxime animi fugit temporibus in nostrum aliquam modi, fuga omnis neque dolorum quisquam rerum itaque nesciunt ratione, vero sequi. Eos voluptate nobis, dolores vel, perferendis blanditiis quo sed ut maxime doloribus, iure sequi!</p>
+</body>
+</html>

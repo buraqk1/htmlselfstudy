@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        div.gallery{
+            border: 1px solid rgb(209, 209, 209);
+        }
+        div.gallery img{
+            width: 100%;
+        }
+        div.desc{
+            text-align: center;
+            padding: 15px;
+        }
+        div.gallery:hover{
+            border: 1px solid black;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .responsive{
+            width: 25%;
+            float: left;
+            padding: 0px 6px;
+        }
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+    @media screen and (max-width: 700px){
+        .responsive{
+            width: 50%;
+        }
+    }
+    @media screen and (max-width: 600px){
+        .responsive {
+            width: 100%;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="1.jpg">
+            <img src="1.jpg" alt="Resim 1"></a>
+            <div class="desc">Güzel Bir Resim</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="2.jpg">
+            <img src="2.jpg" alt="Resim 2"></a>
+            <div class="desc">Güzel Bir Resim</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="3.jpg">
+            <img src="3.jpg" alt="Resim 3"></a>
+            <div class="desc">Güzel Bir Resim</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="4.jpg">
+            <img src="4.jpg" alt="Resim 4"></a>
+            <div class="desc">Güzel Bir Resim</div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt temporibus nulla illum quibusdam atque placeat iusto officiis mollitia recusandae reiciendis nostrum fugiat suscipit, id accusantium! Minus delectus, enim nihil, magni blanditiis porro eum, in odit quos nam dolor iste? Dolorem est nostrum cupiditate reiciendis ipsum earum exercitationem tempora, sint vitae commodi unde voluptates quidem minima perferendis accusamus sed quibusdam laudantium praesentium quam aspernatur placeat. Facilis tempore illo molestias, expedita quisquam iste corporis hic impedit praesentium quibusdam officiis reiciendis explicabo corrupti fuga aut eos temporibus amet recusandae. Doloremque itaque blanditiis, a doloribus vel officiis inventore nulla porro cupiditate dolorem quis ex!</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .topmenu{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: gray;
+            overflow: auto;
+        }
+        .topmenu li{
+            float: left;
+        }
+        .topmenu li a{
+            display: inline-block;
+            color: white;
+            padding: 15px 15px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .a{
+            background-color: red;
+        }
+        .topmenu li a:hover{
+            background-color: black;
+        }
+        .clearfix{
+            content: '';
+            clear: both;
+            display: table;
+        }
+        .sidemenu{
+            width: 25%;
+        }
+        .sidemenu ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .sidemenu li a{
+            display: block;
+            padding: 10px;
+            background-color: cadetblue;
+            text-decoration: none;
+            color: aliceblue;
+            text-align: center;
+        }
+        .sidemenu li a:hover{
+            background-color: black;
+        }
+        .content{
+            width:75%;
+        }
+        .column{
+            float: left;
+            padding: 15px;
+        }
+        .header{
+            background-color: aqua;
+            text-align: center;
+            padding: 15px;
+        }
+        .footer{
+            background-color: gray;
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <ul class="topmenu">
+        <li class="a"><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="clearfix">
+        <div class="column sidemenu">
+            <ul>
+                <li><a href="#theflight">The Flight</a></li>
+                <li><a href="#thecity">The City</a></li>
+                <li><a href="#theisland">The Island</a></li>
+                <li><a href="#thefood">The Food</a></li>
+                <li><a href="#thepeople">The People</a></li>
+                <li><a href="#thehistory">The History</a></li>
+                <li><a href="#theocean">The Ocean</a></li>
+            </ul>
+        </div>
+        <div class="column content">
+            <div>
+                <h1 class="header">The City</h1>
+            </div>
+            <div>
+                <h1>China</h1>
+                <p>Çin, resmî adı ile Çin Halk Cumhuriyeti, Doğu Asya'da Çin Komünist Partisi tarafından tek parti rejimiyle yönetilen üniter egemen devlet.</p>
+                <p>Siktir et amk komünistlerini küçük pipili oçlar</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+</body>
+</html>

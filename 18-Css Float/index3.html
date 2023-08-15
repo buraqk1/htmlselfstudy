@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear Fix</title>
+    <style>
+        .a{
+            width: 700px;
+            border: 2px solid red;
+            float: right;
+            margin: 10px;
+        }
+        .a::after{
+            content:'';
+            clear: both;
+            display: table;
+        }
+        .b{
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <h2>Clear Fix</h2>
+
+    <div class="a">
+        <img src="deniz.jpg" class="b" width="200px" height="200px">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit veniam saepe a quo, assumenda praesentium recusandae necessitatibus dolorem velit consectetur expedita fugit quidem commodi architecto harum aliquam voluptate voluptatum iure aspernatur ipsam eius eaque mollitia odio perspiciatis. Possimus officia blanditiis ut suscipit doloremque optio, quam magni doloribus quaerat aliquid tenetur.</p>
+    </div>
+</body>
+</html>
