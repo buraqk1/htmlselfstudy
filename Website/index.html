@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .head{
+            text-align: center;
+            height: 100px;
+            background-color: dimgray;
+            color: antiquewhite;
+            padding: 40px;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: dimgrey;
+            overflow: hidden;
+        }
+        li{
+            float: left;
+        }
+        li a{
+            display: inline-block;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+        }
+        li a:hover{
+            background-color: black;
+        }
+        .sex.side{
+            width: 25%;
+        }
+        .sex.content{
+            width: 50%;
+        }
+        .sex{
+            float: left;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .area{
+            height: 500px;
+        }
+        .footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            height: 50px;
+            padding: 20px;
+        }
+        .area::after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+    @media screen and (max-width: 700){
+        .sex.side{
+            width: 100%;
+        }
+        .sex.content{
+            width: 100%;
+        }
+    }
+    </style>
+</head>
+<body>
+
+    <div class="head">
+        <h1>Marley Brothers</h1>
+        <p>Zamanın Ruhunu Yakalayın</p>
+    </div>
+
+    <div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#form">Form</a></li>
+        </ul>
+    </div>
+
+    <div class="area">
+        <div class="sex side">
+            <h3>Side</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est ut exercitationem odit repellendus consequatur deleniti?</p>
+        </div>
+
+        <div class="sex content">
+            <h3>Content</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit commodi quis, nostrum dicta, ipsum voluptas saepe aut perspiciatis officiis consequatur quia dolores quae veniam. Natus quasi doloremque eveniet voluptatem praesentium voluptates consectetur eius assumenda animi est, cupiditate incidunt! Non aperiam modi obcaecati, autem tempore voluptates pariatur fugiat maiores repellat possimus!</p>
+        </div>
+
+        <div class="sex side">
+            <h3>Side</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ea commodi eos nobis distinctio a.</p>
+        </div>
+    </div>
+
+    <div class="footer">Footer</div>
+
+</body>
+</html>
