@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burak's Website</title>
+    <Style>
+        body{
+            background-color: rgb(211, 211, 211);
+        }
+        .bighead{
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            text-align: center;
+            height: 100px;
+            padding: 50px;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            list-style-type: none;
+            overflow: hidden;
+        }
+        li{
+            float: left;
+        }
+        li a{
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            padding: 15px;
+        }
+        .right{
+            float: right;
+        }
+        li a:hover{
+            background-color: dimgray;
+        }
+        .content{
+            height: 1000px;
+            padding-top: 5px;
+            background-color: rgb(211, 211, 211);
+        }
+        .area{
+            float: left;
+        }
+        .area.first{
+            width: 75%;
+            height: 990px;
+        }
+        .area.second{
+            width: 25%;
+            height: 990px;
+        }
+        .head1, .head2{
+            margin-top: 10px;
+            margin-right: 10px;
+            padding: 10px;
+            background-color: white;
+        }
+        .head3, .head4, .head5{
+            margin-top: 10px;
+            padding: 10px;
+            background-color: white;
+        }
+        .img{
+            background-color: gray;
+            height: 250px;
+        }
+        .head4 div{
+            background-color: gray;
+            height: 50px;
+            margin-top: 10px;
+        }
+        .subject{
+            margin-top: 10px;
+            width: 94%;
+            height: 140px;
+            padding: 10px;
+            background-color: white;
+        }
+        input[type=text]{
+            width: 97%;
+            height: 80px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+        input[type=submit]{
+            width: 97%;
+            background-color: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type=submit]:hover{
+            background-color: dimgray;
+        }
+        input[type=text]:focus{
+            background-color: darkgray;
+        }
+        .footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 50px;
+            margin-top: 20px;
+        }
+    </Style>
+</head>
+<body>
+    <div class="bighead">
+        <h1>Burak's Website</h1>
+        <p>Burak's second website work</p>
+    </div>
+    
+    <div>
+        <ul>
+            <li><a href="#link">Link</a></li>
+            <li><a href="#link1">Link1</a></li>
+            <li><a href="#link2">Link2</a></li>
+            <li><a href="#link3">Link3</a></li>
+            <li class="right"><a href="#link4">Link4</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="area first">
+            <div class="head1">
+                <h2>Head1</h2>
+                <h4>Textttttt</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <div class="img">Image</div>
+                <p>texttttttttt</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, repellendus.</p>
+            </div>
+            <div class="head2">
+                <h2>Head2</h2>
+                <h4>textttttt</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <div class="img">Image</div>
+                <p>texttttttttt</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, voluptatibus.</p>
+            </div>
+        </div>
+
+        <div class="area second">
+            <div class="head3">
+                <h3>Head3</h3>
+                <div class="img">Image</div>
+                <p>Lorem ipsum dolor sit.</p>
+            </div>
+            <div class="head4">
+                <h3>Head4</h3>
+                <div>Image</div>
+                <div>Image</div>
+                <div>Image</div>
+            </div>
+            <div class="head5">
+                <h3>Head5</h3>
+                <p>abcdefg</p>
+                <p>123456</p>
+                <p>blablablabla</p>
+            </div>
+            <div class="subject">
+                <form action="form">
+                    <label for="subject">Subject</label>
+                    <input type="text">
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Footer</div>
+</body>
+</html>
