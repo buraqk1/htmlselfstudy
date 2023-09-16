@@ -1,0 +1,90 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        .header{
+            text-align: center;
+            padding: 40px;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap; 
+            padding:0 5px;
+        }
+        .column{
+            flex: 25%;
+            max-width: 25%;
+            padding:0 5px;
+        }
+        .column img{
+            margin-top: 20px;
+            vertical-align: middle;
+            width: 100%;
+        }
+
+    @@media(max-width:800px){
+        .column{
+            flex: 50%;
+            max-width: 100%;
+        }
+    }
+    @@media(max-width:450px){
+        .column{
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>
+            Image Gallery with FlexBox
+        </h1>
+        <p>
+            Let's see power of FlexBox
+        </p>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="~/Pics/udemypics/resim.jpg" />
+            <img src="~/Pics/udemypics/resim1.jpg" />
+            <img src="~/Pics/udemypics/resim10.jpg" />
+            <img src="~/Pics/udemypics/resim12.jpg" />
+            <img src="~/Pics/udemypics/resim11.jpg" />
+            <img src="~/Pics/udemypics/resim13.jpg" />
+        </div>
+        <div class="column">
+            <img src="~/Pics/udemypics/resim14.jpg" />
+            <img src="~/Pics/udemypics/resim15.jpg" />
+            <img src="~/Pics/udemypics/resim16.jpg" />
+            <img src="~/Pics/udemypics/resim17.jpg" />
+            <img src="~/Pics/udemypics/resim18.jpg" />
+            <img src="~/Pics/udemypics/resim19.jpg" />
+        </div>
+        <div class="column">
+            <img src="~/Pics/udemypics/resim2.jpg" />
+            <img src="~/Pics/udemypics/resim20.jpg" />
+            <img src="~/Pics/udemypics/resim21.jpg" />
+            <img src="~/Pics/udemypics/resim22.jpg" />
+            <img src="~/Pics/udemypics/resim23.jpg" />
+            <img src="~/Pics/udemypics/resim24.jpg" />
+        </div>
+        <div class="column">
+            <img src="~/Pics/udemypics/resim3.jpg" />
+            <img src="~/Pics/udemypics/resim4.jpg" />
+            <img src="~/Pics/udemypics/resim5.jpg" />
+            <img src="~/Pics/udemypics/resim6.jpg" />
+            <img src="~/Pics/udemypics/resim7.jpg" />
+            <img src="~/Pics/udemypics/resim8.jpg" />
+            <img src="~/Pics/udemypics/resim9.jpg" />
+        </div>
+    </div>
+</body>
+</html>
